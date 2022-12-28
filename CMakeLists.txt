@@ -14,7 +14,7 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
 
 # Add source to this project's executable.
-add_executable (Dullahan-Game-Engine "Dullahan-Game-Engine.cpp" "Dullahan-Game-Engine.h" "IMGUI.h")
+add_executable (Dullahan-Game-Engine "Dullahan-Game-Engine.cpp" "Dullahan-Game-Engine.h" "IMGUI.h" "Window.h"  "Window.cpp")
 
 add_subdirectory(Dependencias/glfw)
 add_subdirectory(Dependencias/glew)
@@ -27,6 +27,9 @@ endif()
 target_include_directories(Dullahan-Game-Engine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glew/include)
 target_include_directories(Dullahan-Game-Engine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glfw/include)
 
+target_include_directories(Dullahan-Game-Engine PUBLIC
+                           "${PROJECT_BINARY_DIR}"
+                           )
 
 target_link_libraries(Dullahan-Game-Engine
 		glfw

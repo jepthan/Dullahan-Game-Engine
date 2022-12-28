@@ -3,13 +3,13 @@
 
 #include "Dullahan-Game-Engine.h"
 
-#include "gl/glew.h"
-#include "GLFW/glfw3.h"
 #include "IMGUI.h"
+#include "Window.h"
 using namespace std;
 
 int main()
 {
-	
+	JPH::Window *win = new JPH::Window();
+
 	return 0;
 }
