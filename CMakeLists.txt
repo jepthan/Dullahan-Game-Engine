@@ -14,7 +14,7 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
 
 # Add source to this project's executable.
-add_executable (Dullahan-Game-Engine "Dullahan-Game-Engine.cpp" "Dullahan-Game-Engine.h")
+add_executable (Dullahan-Game-Engine "Dullahan-Game-Engine.cpp" "Dullahan-Game-Engine.h" "IMGUI.h")
 
 add_subdirectory(Dependencias/glfw)
 add_subdirectory(Dependencias/glew)
