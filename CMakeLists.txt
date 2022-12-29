@@ -11,10 +11,16 @@ set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
+file(GLOB dullahan_SRC
+     "source/*.h"
+     "source/*.cpp"
+     "*.h"
+     "*.cpp"
+)
 
 
 # Add source to this project's executable.
-add_executable (Dullahan-Game-Engine "Dullahan-Game-Engine.cpp" "Dullahan-Game-Engine.h" "IMGUI.h" "Window.h"  "Window.cpp")
+add_executable (Dullahan-Game-Engine  ${dullahan_SRC})
 
 add_subdirectory(Dependencias/glfw)
 add_subdirectory(Dependencias/glew)
