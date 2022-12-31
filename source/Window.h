@@ -15,7 +15,5 @@ namespace JPH {
 	private:
 		GLFWwindow* window;
 
-
-
 	};
 }
