@@ -21,23 +21,24 @@ JPH::Vector2::Vector2(float _x, float _y)
 	y = _y;
 }
 
-JPH::Vector4::Vector3()
+JPH::Vector4::Vector4()
 {
+	
 }
 
-JPH::Vector4::Vector3(float _x, float _y, float _z, float _w) {
+JPH::Vector4::Vector4(float _x, float _y, float _z, float _w) {
 	x = _x;
 	y = _y;
 	z = _z;
 	w = _w;
 }
 
-JPH::Matrix4f::Matrix4f() 
+JPH::Matrix4::Matrix4() 
 {
 
 }
 
-JPH::Matrix4f::Matrix4f(float _x1, float _x2, float _x3, float _x4, float _y1, float _y2, float _y3, float _y4, float _z1, float _z2, float _z3, float _z4, float _w1, float _w2, float _w3, float _w4) {
+JPH::Matrix4::Matrix4(float _x1, float _x2, float _x3, float _x4, float _y1, float _y2, float _y3, float _y4, float _z1, float _z2, float _z3, float _z4, float _w1, float _w2, float _w3, float _w4) {
 
 	m[0][0] = _x1;
 	m[0][1] = _x2;
@@ -61,8 +62,8 @@ JPH::Matrix4f::Matrix4f(float _x1, float _x2, float _x3, float _x4, float _y1, f
 
 }
 
-Matrix4f JPH::Matrix4f::operator*(Matrix4f& right) const {
-	Matrix4f out;
+JPH::Matrix4 JPH::Matrix4::operator*(Matrix4& right) const {
+	Matrix4 out;
 	for (unsigned int i = 0; i < 4; i++) {
 		for (unsigned int j = 0; j < 4; j++) {
 			out.m[i][j] = m[i][0] * right.m[0][j] +

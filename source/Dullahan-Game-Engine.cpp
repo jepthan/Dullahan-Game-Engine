@@ -4,12 +4,14 @@
 #include "Dullahan-Game-Engine.h"
 #include "IMGUI.h"
 #include "Window.h"
-#include <math.h>
-using namespace std;
+#include "Math.h"
 
 int main()
 {
 	JPH::Window *win = new JPH::Window();
+	JPH::Vector2 hi = { 0,1 };
+	std::cout << hi.y;
 	win->start();
+	
 	return 0;
 }
