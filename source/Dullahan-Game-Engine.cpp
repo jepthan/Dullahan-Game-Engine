@@ -4,6 +4,7 @@
 #include "Dullahan-Game-Engine.h"
 #include "IMGUI.h"
 #include "Window.h"
+#include <math.h>
 using namespace std;
 
 int main()
