@@ -8,7 +8,7 @@ namespace JPH {
 
 	public:
 		Window();
-		~Window();
+		virtual ~Window();
 		void initglfw();
 		void initglew();
 		void start();
