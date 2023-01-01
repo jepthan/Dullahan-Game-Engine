@@ -35,7 +35,7 @@ void JPH::Window::initglfw()
     glfwMakeContextCurrent(this->window);
 
 }
-
+//error print callback
 void GLAPIENTRY MessageCallback(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar* message, const void* userParam) {
     std::cout << "Error From Opengl (" << type << ") " << message << std::endl;
 }
@@ -49,6 +49,7 @@ void JPH::Window::initglew()
         /* Problem: glewInit failed, something is seriously wrong. */
         std::cerr << "Error al inicializar glew" << glewGetErrorString(err) << std::endl;
     }
+    //set error system
     glEnable(GL_DEBUG_OUTPUT);
     glDebugMessageCallback(MessageCallback, 0);
 
@@ -57,8 +58,7 @@ void JPH::Window::initglew()
 void JPH::Window::start()
 {
 
-    unsigned int buffer;
-    glGenBuffers(-1, &buffer);
+    
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(this->window))
     {
