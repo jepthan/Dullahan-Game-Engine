@@ -2,7 +2,7 @@
 #include <iostream>
 #include "gl/glew.h"
 #include "glfw/glfw3.h"
-
+#include "Shader.h"
 namespace JPH {
 	class Window {
 
