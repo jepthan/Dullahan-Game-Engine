@@ -7,6 +7,8 @@ namespace JPH {
 		
 		Vector2();
 		Vector2(float _x, float _y);
+		Vector2 operator-(Vector2& right) const;
+		Vector2 operator+(Vector2& right) const;
 	};
 
 	struct Vector3
@@ -16,6 +18,8 @@ namespace JPH {
 		float z;
 		Vector3();
 		Vector3(float _x, float _y, float _z);
+		Vector3 operator-(Vector3& right) const;
+		Vector3 operator+(Vector3& right) const;
 	};
 
 	struct Vector4
@@ -27,6 +31,8 @@ namespace JPH {
 
 		Vector4();
 		Vector4(float _x, float _y, float _z, float _w);
+		Vector4 operator-(Vector4& right) const;
+		Vector4 operator+(Vector4& right) const;
 	};
 
 	struct Matrix4 {
