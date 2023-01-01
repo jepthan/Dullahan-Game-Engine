@@ -11,7 +11,7 @@ JPH::Vector3::Vector3(float _x, float _y, float _z)
 	z = _z;
 }
 
-Vector3 JPH::Vector3::operator-(Vector3& right) const
+JPH::Vector3 JPH::Vector3::operator-(Vector3& right) const
 {
 	Vector3 out;
 	out.x = this->x - right.x;
@@ -20,7 +20,7 @@ Vector3 JPH::Vector3::operator-(Vector3& right) const
 	return out;
 }
 
-Vector3 JPH::Vector3::operator+(Vector3& right) const
+JPH::Vector3 JPH::Vector3::operator+(Vector3& right) const
 {
 	Vector3 out;
 	out.x = this->x + right.x;
@@ -39,7 +39,7 @@ JPH::Vector2::Vector2(float _x, float _y)
 	y = _y;
 }
 
-Vector2 JPH::Vector2::operator-(Vector2& right) const
+JPH::Vector2 JPH::Vector2::operator-(Vector2& right) const
 {
 	Vector2 out;
 	out.x = this->x - right.x;
@@ -47,7 +47,7 @@ Vector2 JPH::Vector2::operator-(Vector2& right) const
 	return out;
 }
 
-Vector2 JPH::Vector2::operator+(Vector2& right) const
+JPH::Vector2 JPH::Vector2::operator+(Vector2& right) const
 {
 	Vector2 out;
 	out.x = this->x + right.x;
@@ -67,23 +67,23 @@ JPH::Vector4::Vector4(float _x, float _y, float _z, float _w) {
 	w = _w;
 }
 
-Vector4 JPH::Vector4::operator-(Vector4& right) const
+JPH::Vector4 JPH::Vector4::operator-(Vector4& right) const
 {
 	Vector4 out;
 	out.x = this->x - right.x;
 	out.y = this->y - right.y;
 	out.z = this->z - right.z;
-	out.w = this->2 - right.w;
+	out.w = this->w - right.w;
 	return out;
 }
 
-Vector4 JPH::Vector4::operator+(Vector4& right) const
+JPH::Vector4 JPH::Vector4::operator+(Vector4& right) const
 {
 	Vector4 out;
 	out.x = this->x + right.x;
 	out.y = this->y + right.y;
 	out.z = this->z + right.z;
-	out.w = this->2 + right.w;
+	out.w = this->w + right.w;
 	return out;
 }
 
