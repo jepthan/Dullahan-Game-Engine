@@ -20,7 +20,7 @@ file(GLOB dullahan_SRC
 
 
 # Add source to this project's executable.
-add_executable (Dullahan-Game-Engine  ${dullahan_SRC}  "source/Shader.h" "source/Shader.cpp")
+add_executable (Dullahan-Game-Engine  ${dullahan_SRC}  "source/Shader.h" "source/Shader.cpp" "source/ShaderProgram.h" "source/ShaderProgram.cpp")
 
 add_subdirectory(Dependencias/glfw)
 add_subdirectory(Dependencias/glew)

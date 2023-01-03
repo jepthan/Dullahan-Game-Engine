@@ -16,6 +16,8 @@ int main()
 	JPH::Window *win = new JPH::Window();
 	JPH::Vector2 hi = { 0,1 };
 	std::cout << hi.y;
+	std::cout << glGetString(GL_VERSION);
+	//std::cout << glGetString(GL_VERTEX_SHADER);
 	win->start();
 	
 	return 0;
